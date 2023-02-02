@@ -2,7 +2,7 @@ from pathlib import Path
 import csv
 fp = Path.cwd()/"csv_reports"/"cash-on-hand-usd.csv"
 
-#reading mode to rede csv file
+#reading mode to read csv file
 with fp.open(mode = "r",encoding = "UTF-8", newline ="") as file:
     #instantiate a reader object
     reader = csv.reader(file)
