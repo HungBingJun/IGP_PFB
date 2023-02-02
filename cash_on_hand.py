@@ -23,11 +23,14 @@ def cash_on_hand():
     
     # for loop to loop through the rows (1 to the numnber of sublist in data_list)
     for row in range(1,len(data_list)):
+        
         # find the difference between cash on hand on the day and the cash on hand on the day before
         difference = (int(data_list[row][1])) - int(data_list[row-1][1])
+        
         # when difference is negative, the day and the difference amount would be extended in the negative list
         if difference < 0:
             negative.extend([data_list[row][0],difference])
+        
         # when difference is positive, the program will continue and the positive value will not be assigned to anything
         else:
             continue
