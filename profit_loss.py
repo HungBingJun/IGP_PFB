@@ -38,7 +38,7 @@ def profit_loss():
         else:
             continue
 
-        # if there are no values in the negative list, the programme will return a cash surplus
+    # if there are no values in the negative list, the programme will return a cash surplus
     if len(negative) == 0:
         return("[NET PROFIT SURPLUS] NET PROTIFT ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY")
 
