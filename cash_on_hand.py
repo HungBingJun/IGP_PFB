@@ -42,4 +42,4 @@ def cash_on_hand():
     else:
         # the category will be even indexes will be category while the odd indexes are the values.
         for index in range(0,len(negative),2):
-            return(f"[CASH DEFICIT] DAY: {float(negative[index])}, AMOUNT: USD{abs(negative[index +1])}")
+            return(f"[CASH DEFECIT] DAY: {float(negative[index])}, AMOUNT: USD{abs(negative[index +1])}")
