@@ -37,11 +37,11 @@ def profit_loss():
             continue
 
         # if there are no values in the negative list, the programme will return a cash surplus
-        if len(negative) == 0:
-            return("[NET PROFIT SURPLUS] NET PROTIFT ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY")
+    if len(negative) == 0:
+        return("[NET PROFIT SURPLUS] NET PROTIFT ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY")
 
         # else it will return the day of the profit defecit and the amount of profit defecit in positive numbers
-        else:
-            # index will appear in even numbers and skip odd numbers
-            for index in range(0,len(negative),2):
-                return(f"[PROFIT DEFECIT] DAY: {float(negative[index])}, AMOUNT: USD{abs(negative[index+1])}")
+    else:
+        # index will appear in even numbers and skip odd numbers
+        for index in range(0,len(negative),2):
+            return(f"[PROFIT DEFECIT] DAY: {float(negative[index])}, AMOUNT: USD{abs(negative[index+1])}")
