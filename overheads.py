@@ -26,7 +26,14 @@ def overheads():
     - Finds out the highest overheads
     - No parameters are required
     """
-
+    
+    # for loop to append data from overheads value to overheads list
+    for row in range(len(data_list)):
+        overheads_list.append(float(data_list[row][1]))
+   
+    # sort the overheads values in ascending order
+    overheads_list.sort()
+    
     # for loop to loop through the row numbers of the data_list
     for row in range(len(data_list)):
         
