@@ -44,4 +44,4 @@ def profit_loss():
     else:
         # index will appear in even numbers and skip odd numbers
         for index in range(0,len(negative),2):
-            return(f"[PROFIT DEFECIT] DAY: {float(negative[index])}, AMOUNT: USD{abs(negative[index+1])}")
+            return(f"[PROFIT DEFICIT] DAY: {float(negative[index])}, AMOUNT: USD{abs(negative[index+1])}")
