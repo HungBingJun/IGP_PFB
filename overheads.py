@@ -27,6 +27,13 @@ def overheads():
     - No parameters are required
     """
 
+    # for loop to append data from overheads value to overheads list
+    for row in range(len(data_list)):
+        overheads_list.append(float(data_list[row][1]))
+   
+    # sort the overheads values in ascending order
+    overheads_list.sort()
+
     # for loop to loop through the row numbers of the data_list
     for row in range(len(data_list)):
         
@@ -41,4 +48,4 @@ def overheads():
 
     # return the category in capital words and its value of the overheads
     return(f"[HIGHEST OVERHEADS] {highest[0][0].upper()}: {highest[0][1]}%")       
-    
+
