@@ -1,7 +1,7 @@
 from pathlib import Path
 import cash_on_hand, overheads, profit_loss
 
-creating a new text file and assigning it to the current working directory
+#creating a new text file and assigning it to the current working directory
 home = Path.cwd()
 file_path = home/"summary_report.txt"
 file_path.touch()
