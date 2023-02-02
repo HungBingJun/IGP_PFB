@@ -26,12 +26,14 @@ def profit_loss():
 
     # for loop to loop rows from 1 to the number of sub list in data_list
     for row in range(1,len(data_list)):
+        
         # calculating the difference between the net profit on the day itself and the day before
         difference = int(data_list[row][4]) - int(data_list[row-1][4])
        
         # if difference is negative, the day and the values of the difference would be exteneded in negative list
         if difference < 0:
             negative.extend([data_list[row][4],[difference]])
+        
         # else programme will continue
         else:
             continue
@@ -42,6 +44,7 @@ def profit_loss():
 
         # else it will return the day of the profit defecit and the amount of profit defecit in positive numbers
     else:
+       
         # index will appear in even numbers and skip odd numbers
         for index in range(0,len(negative),2):
             return(f"[PROFIT DEFICIT] DAY: {float(negative[index])}, AMOUNT: USD{abs(negative[index+1])}")

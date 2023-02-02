@@ -30,13 +30,14 @@ def overheads():
     # for loop to append data from overheads value to overheads list
     for row in range(len(data_list)):
         overheads_list.append(float(data_list[row][1]))
+    
     # sort the overheads values in ascending order
     overheads_list.sort()
-     
+
     # for loop to loop through the row numbers of the data_list
     for row in range(len(data_list)):
         
-        # using overhead values from raw data to find out which category matches the highest overheads(-1 index)
+        # using overhead values from data_list to find out which category matches the highest overheads value in overheads_list(-1 index)
         if float(data_list[row][1]) == overheads_list[-1]:
             
             # when matched it will append the category and value from raw data to the highest list
